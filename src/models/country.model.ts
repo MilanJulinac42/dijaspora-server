@@ -10,16 +10,12 @@ import { ObjectType, Field } from '@nestjs/graphql';
 
 @ObjectType()
 @Entity()
-export class CityModel {
+export class CountryModel {
   @Field()
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Field()
   @Column()
-  city: string;
-
-  //   @Field()
-  //   @Column()
-  //   country_id: string;
+  name: string;
 }
