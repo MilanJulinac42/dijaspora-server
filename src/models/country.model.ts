@@ -18,4 +18,14 @@ export class CountryModel {
   @Field()
   @Column()
   name: string;
+
+  @Field()
+  @Column()
+  @CreateDateColumn()
+  created_at: Date;
+
+  @Field()
+  @Column()
+  @UpdateDateColumn()
+  updated_at: Date;
 }

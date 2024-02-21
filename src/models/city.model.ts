@@ -22,4 +22,14 @@ export class CityModel {
   //   @Field()
   //   @Column()
   //   country_id: string;
+
+  @Field()
+  @Column()
+  @CreateDateColumn()
+  created_at: Date;
+
+  @Field()
+  @Column()
+  @UpdateDateColumn()
+  updated_at: Date;
 }
